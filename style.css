@@ -1,0 +1,332 @@
+/* リセットCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	/* font-weight: normal; */
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+
+table{border-collapse: collapse; border-spacing:0;}
+a:focus {outline:none;}
+a{
+  text-decoration: none;
+}
+
+/* リセットCSS　ここまで */
+
+body{
+  background-color: #F6F6F6;
+}
+
+#top{
+  border-top: 10px solid #6CC6C4;
+  width: 100%;
+}
+
+#wrapper{
+  margin: 0 auto;
+  width: 920px;
+  height: auto;
+
+}
+
+header{
+  /* background-color: pink; */
+  width: 920px;
+  height: auto;
+  /* display: flex; */
+  position: relative;
+}
+
+header #logo{
+  padding-top: 60px;
+  float: left;
+}
+
+header h1{
+  float: left;
+  padding-top: 10px;
+}
+
+header p{
+  float: right;
+}
+header #desc{
+  font-size: 77%;
+  padding-top: 10px;
+
+}
+
+header #tel{
+  font-size: 197%;
+  background: url(https://haniwaman.com/sample/part3/template_08/common/images/bgTel.png) center left no-repeat;
+  padding-left: 25px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  margin-top: 20px;
+}
+
+header #item{
+  border:1px solid #d6d6d6;
+  padding:10px 20px;
+  font-size: 77%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  margin-top: 20px;
+}
+
+header #item span{
+  color:red;
+}
+
+/* コンテンツここから */
+
+#contents{
+  /* background-color: red; */
+  width: 920px;
+  height: auto;
+  margin-top: 75px;
+  display: flex;
+  text-shadow: 1px 1px 2px #6cc6c4;
+}
+
+#contents .link a{
+  background: #99E1DF;
+  color: white;
+  flex-direction: row;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  font-size: 108%;
+  height: 70px;
+  padding-top: 10px;
+  text-decoration: none;
+  width: 184px;
+  border:1px solid  #6CC6C4;
+}
+
+#contents #mostleft{
+  border-radius: 5% 0 0 5%;
+}
+
+#contents #mostright{
+  border-radius: 0 5% 5% 0;
+}
+
+#contents span{
+  font-size: 77%;
+}
+#contents a:hover{
+  opacity: 0.9;
+}
+
+.clear{
+  clear: both;
+}
+
+/* レフトここから */
+/* url(../images/bgListIcon01.png)  */
+
+#left{
+  /* background: skyblue; */
+  width: 260px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.items{
+  margin-top:30px;
+}
+
+#left h2{
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height:50px;
+  background: #99E1DF;
+  padding-left: 25px;
+  border:1px solid  #6CC6C4;
+  border-radius: 10px 10px 0 0;
+  
+}
+
+#left ul{
+  background: white;
+  border:1px solid  #6CC6C4;
+  color: black;
+}
+
+#left li{
+  line-height:50px;
+  margin-left:30px;
+  margin-right: 20px;
+  border-bottom: 1px solid  #6CC6C4;
+  text-decoration: none;
+  
+  font-size:17px;
+  font-weight: bold;
+}
+
+#left .blank{
+  margin-bottom: 25px;
+} 
+
+#left li a{
+  display: block;
+}
+ #left li a:hover{
+   color: #6CC6C4;
+ }
+/* レフトここまで */
+
+/* ライトここから */
+#right{
+  background: white;
+  width: 640px;
+  height: auto;
+  display: inline-block;
+  margin-top: 30px;
+  list-style: none;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+#right #intro{
+  height:auto;
+  background: #6CC6C4;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+  padding: 50px 0 40px 30px;
+  font-size: 25px;
+}
+
+#right #desc{
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  border-bottom: 3px solid  #6CC6C4;
+  margin: 0 30px;
+}
+
+#right dl{
+  margin: 0 50px;
+}
+
+#right dt{
+  color: #6CC6C4;
+  padding: 40px 0 25px 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#right dd{
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+#right #rest{
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  border-bottom: 3px solid  #6CC6C4;
+  margin: 0 30px;
+}
+
+#right table{
+  margin: 15px 30px 0 30px;
+}
+
+#right #top2{
+  background: #D1D1D1;
+}
+
+#right th{
+  border:1px solid black;
+  padding: 15px 34px;
+}
+
+#right .abc{
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+#right .abc > p{
+  padding-top: 10px;
+}
+
+#right span{
+  font-weight: bold;
+}
+
+
+/* ライトここまで */
+
+/* フッターここから */
+footer{
+  /* background: green; */
+  width: 920px;
+  height: 200px;
+  margin:0 auto;
+}
+
+.menu{
+  
+  background: #6CC6C4;
+  
+  line-height: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.menu a{
+  display: inline-block;
+  padding-left: 25px;
+  background: url(#) no-repeat center left;
+  color: white;
+}
+
+footer #address{
+  line-height: 60px;
+  border-bottom: 3px solid  #6CC6C4;
+  float: right;
+  padding-left: 393px;
+}
+
+footer span{
+  font-weight: bold;
+}
+
+footer #Copyright {
+  text-align: center;
+  line-height: 60px;
+}
